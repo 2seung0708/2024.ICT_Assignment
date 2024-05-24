@@ -1,0 +1,17 @@
+****/*.tar
+****/*.pkl
+__pycache__
+*/__pycache__
+*/*/__pycache__
+*/*/*/__pycache__
+*/*/*/*/__pycache__
+*****.pyc
+****/*.so
+FFB6D/FFB6D/ffb6d/datasets/ycb/YCB_Video_Dataset
+FFB6D/FFB6D/ffb6d/datasets/linemod/Linemod_preprocessed
+FFB6D/FFB6D/ffb6d/datasets/custom/
+FFB6D/FFB6D/apex/
+FFB6D/FFB6D/normalSpeed/
+*.pth
+*.tar
+

@@ -1,0 +1,88 @@
+N_PTS: 11
+DEVICE: 'cuda'
+BATCH_SIZE: 3
+TEST_BATCH_SIZE: 1
+LM_DIR: '<path_to_lm_folder>'
+LMO_DIR: '<path_to_lmo_folder>'
+LM_SYNT_DIR: '<path_to_lm_synthetic_folder>'
+YCBV_DIR: '<path_to_ycbv_folder>'
+OUTPUT_DIR: '<path_to_output_folder>'
+WORKERS: 4
+END_EPOCH: 200
+PRINT_FREQ: 100
+LR: 0.0002
+LR_DECAY: 0.2
+LR_STEPS:
+  - 60
+  - 120
+  - 170
+
+MODEL:
+  INIT_WEIGHTS: true
+  PRETRAINED: '<path_to_pretrained_hrnet_backbone_file>'
+  TARGET_TYPE: gaussian
+  IMAGE_SIZE:
+  - 640
+  - 480
+  EXTRA:
+    PRETRAINED_LAYERS:
+    - 'conv1'
+    - 'bn1'
+    - 'conv2'
+    - 'bn2'
+    - 'layer1'
+    - 'transition1'
+    - 'stage2'
+    - 'transition2'
+    - 'stage3'
+    - 'transition3'
+    - 'stage4'
+    FINAL_CONV_KERNEL: 1
+    STAGE1:
+      NUM_MODULES: 1
+      NUM_RANCHES: 1
+      BLOCK: BOTTLENECK
+      NUM_BLOCKS:
+      - 4
+      NUM_CHANNELS:
+      - 64
+      FUSE_METHOD: SUM
+    STAGE2:
+      NUM_MODULES: 1
+      NUM_BRANCHES: 2
+      BLOCK: BASIC
+      NUM_BLOCKS:
+      - 4
+      - 4
+      NUM_CHANNELS:
+      - 32
+      - 64
+      FUSE_METHOD: SUM
+    STAGE3:
+      NUM_MODULES: 4
+      NUM_BRANCHES: 3
+      BLOCK: BASIC
+      NUM_BLOCKS:
+      - 4
+      - 4
+      - 4
+      NUM_CHANNELS:
+      - 32
+      - 64
+      - 128
+      FUSE_METHOD: SUM
+    STAGE4:
+      NUM_MODULES: 3
+      NUM_BRANCHES: 4
+      BLOCK: BASIC
+      NUM_BLOCKS:
+      - 4
+      - 4
+      - 4
+      - 4
+      NUM_CHANNELS:
+      - 32
+      - 64
+      - 128
+      - 256
+      FUSE_METHOD: SUM

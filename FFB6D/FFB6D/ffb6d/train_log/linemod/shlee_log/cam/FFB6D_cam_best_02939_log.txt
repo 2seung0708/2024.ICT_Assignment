@@ -1,0 +1,54 @@
+local_rank: 0
+cls_id in lm_dataset.py 4
+test_dataset_size:  1020
+loading resnet34 pretrained mdl.
+Warning:  using Python fallback for SyncBatchNorm, possibly because apex was installed without --cuda_ext.  The exception raised when attempting to import the cuda backend was:  No module named 'syncbn'
+local_rank: 0
+Selected optimization level O0:  Pure FP32 training.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+==> Loading from checkpoint './train_log/linemod/checkpoints/cam/FFB6D_cam_best_0.2939.pth.tar'
+==> Done
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cam_8_kps.txt
+loss_rgbd_seg 0.0016280946518949634
+loss_kp_of 0.08958866118873451
+loss_ctr_of 0.008656692138288681
+loss_all 0.10150154267675152
+loss_target 0.10150154267675152
+acc_rgbd 99.78807232543534
+obj_id:  4 0.1 diameter:  0.017249224865
+4 cam
+***************add auc:	 94.9464550478914
+***************adds auc:	 96.57975241106455
+***************add(-s) auc:	 94.9464550478914
+***************add < 0.1 diameter:	 100.0
+***************adds < 0.1 diameter:	 100.0
+
+Use time:  70.31270670890808 s

@@ -1,0 +1,52 @@
+local_rank: 0
+cls_id in lm_dataset.py 6
+test_dataset_size:  1002
+loading resnet34 pretrained mdl.
+Warning:  using Python fallback for SyncBatchNorm, possibly because apex was installed without --cuda_ext.  The exception raised when attempting to import the cuda backend was:  No module named 'syncbn'
+local_rank: 0
+Selected optimization level O0:  Pure FP32 training.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+==> Loading from checkpoint './train_log/linemod/checkpoints/cat/FFB6D_cat_best_0.2185.pth.tar'
+==> Done
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+loss_rgbd_seg 0.0010979315681076756
+loss_kp_of 0.0704963848872218
+loss_ctr_of 0.0062181876164613785
+loss_all 0.07891043568189868
+loss_target 0.07891043568189868
+acc_rgbd 99.85457775954477
+obj_id:  6 0.1 diameter:  0.015454551808
+6 cat
+***************add auc:	 96.38297217023218
+***************adds auc:	 97.47863353400781
+***************add(-s) auc:	 96.38297217023218
+***************add < 0.1 diameter:	 99.8003992015968
+***************adds < 0.1 diameter:	 100.0

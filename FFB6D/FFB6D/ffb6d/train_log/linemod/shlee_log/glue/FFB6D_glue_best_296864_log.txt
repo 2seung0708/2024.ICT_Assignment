@@ -1,0 +1,54 @@
+local_rank: 0
+cls_id in lm_dataset.py 11
+test_dataset_size:  1036
+loading resnet34 pretrained mdl.
+Warning:  using Python fallback for SyncBatchNorm, possibly because apex was installed without --cuda_ext.  The exception raised when attempting to import the cuda backend was:  No module named 'syncbn'
+local_rank: 0
+Selected optimization level O0:  Pure FP32 training.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+==> Loading from checkpoint './train_log/linemod/checkpoints/glue/FFB6D_glue_best_29.6864.pth.tar'
+==> Done
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/glue_8_kps.txt
+loss_rgbd_seg 0.4265240549350797
+loss_kp_of 8.659485108143574
+loss_ctr_of 1.0027003581114258
+loss_all 10.515233571925219
+loss_target 10.515233571925219
+acc_rgbd 31.699994731421178
+obj_id:  11 0.1 diameter:  0.017588933422000002
+11 glue
+***************add auc:	 0.4691339611507749
+***************adds auc:	 3.1657430945044434
+***************add(-s) auc:	 3.1657430945044434
+***************add < 0.1 diameter:	 0.0
+***************adds < 0.1 diameter:	 0.09652509652509653
+
+Use time:  3082.6177570819855 s

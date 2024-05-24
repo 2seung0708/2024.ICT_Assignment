@@ -1,0 +1,58 @@
+local_rank: 0
+cls_id in lm_dataset.py 6
+test_dataset_size:  1002
+loading resnet34 pretrained mdl.
+Warning:  using Python fallback for SyncBatchNorm, possibly because apex was installed without --cuda_ext.  The exception raised when attempting to import the cuda backend was:  No module named 'syncbn'
+local_rank: 0
+Selected optimization level O0:  Pure FP32 training.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+==> Loading from checkpoint './train_log/linemod/checkpoints/cat/FFB6D_cat_best.pth.tar'
+==> Done
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/cat_8_kps.txt
+loss_rgbd_seg 0.0009761331723035153
+loss_kp_of 0.052650014354945894
+loss_ctr_of 0.0053006327223542055
+loss_all 0.05990291331260802
+loss_target 0.05990291331260802
+acc_rgbd 99.8671854089596
+obj_id:  6 0.1 diameter:  0.015454551808
+6 cat
+***************add auc:	 97.23371927586771
+***************adds auc:	 97.91722292140186
+***************add(-s) auc:	 97.23371927586771
+***************add < 0.1 diameter:	 99.8003992015968
+***************adds < 0.1 diameter:	 100.0
+> /data2/shlee/2024_calss_ICT_project/FFB6D/FFB6D/ffb6d/train_lm_shlee.py(415)eval_epoch()
+-> seg_res_fn += '_%s%.2f' % (k, v)
+(Pdb) (Pdb) (Pdb) (Pdb) --KeyboardInterrupt--
+(Pdb) --KeyboardInterrupt--
+(Pdb) (Pdb) (Pdb) --KeyboardInterrupt--
+(Pdb) 

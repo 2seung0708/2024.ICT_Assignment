@@ -1,0 +1,54 @@
+local_rank: 0
+cls_id in lm_dataset.py 10
+test_dataset_size:  1065
+loading resnet34 pretrained mdl.
+Warning:  using Python fallback for SyncBatchNorm, possibly because apex was installed without --cuda_ext.  The exception raised when attempting to import the cuda backend was:  No module named 'syncbn'
+local_rank: 0
+Selected optimization level O0:  Pure FP32 training.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O0
+cast_model_type        : torch.float32
+patch_torch_functions  : False
+keep_batchnorm_fp32    : None
+master_weights         : False
+loss_scale             : 1.0
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'",)
+==> Loading from checkpoint './train_log/linemod/checkpoints/eggbox/FFB6D_eggbox_best_0.3290.pth.tar'
+==> Done
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+kps_pth in get_kps: datasets/linemod/kps_orb9_fps/eggbox_8_kps.txt
+loss_rgbd_seg 0.0016322770354637501
+loss_kp_of 0.10295000823800553
+loss_ctr_of 0.00802888056709313
+loss_all 0.1142434427995637
+loss_target 0.1142434427995637
+acc_rgbd 99.78269296632686
+obj_id:  10 0.1 diameter:  0.016462758847999998
+10 eggbox
+***************add auc:	 94.04699027557083
+***************adds auc:	 96.34014503065819
+***************add(-s) auc:	 96.34014503065819
+***************add < 0.1 diameter:	 99.06103286384976
+***************adds < 0.1 diameter:	 99.71830985915493
+
+Use time:  76.48460388183594 s

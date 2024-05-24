@@ -1,0 +1,1 @@
+python test.py --config configs/flow_refine/pfc_raft_flow_mask.py --checkpoint work_dirs/pre_trained/best_AR_iter_200000.pth --format-only --save-dir work_dirs/pre_trained/results
